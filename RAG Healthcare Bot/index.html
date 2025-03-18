@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HealthQuery Chatbot - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .hero-bg {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+        background-size: cover;
+        background-position: center;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+        border-radius: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+
+  <body class="min-h-screen">
+    <!-- Hero Section -->
+    <div class="hero-bg text-white py-20">
+      <header class="container mx-auto px-4 text-center">
+        <h1 class="text-5xl font-bold mb-6 animate-fade-in-down">
+          🩺 Health Query AI
+        </h1>
+        <p class="text-xl mb-8 opacity-90">
+          Your Intelligent Health Assistance Partner
+        </p>
+        <a 
+          href="/bot" 
+          class="inline-block bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
+        >
+          Start Consultation →
+        </a>
+      </header>
+    </div>
+
+    <!-- Features Section -->
+    <section class="container mx-auto px-4 py-16">
+      <div class="grid md:grid-cols-3 gap-8 mb-16">
+        <!-- Feature Card 1 -->
+        <div class="glass-card p-8 hover:transform hover:-translate-y-2 transition-all duration-300">
+          <div class="text-4xl mb-4 text-blue-600">⚕️</div>
+          <h3 class="text-2xl font-semibold mb-4">Medical Expertise</h3>
+          <p class="text-gray-600">
+            Powered by verified medical knowledge and research papers
+          </p>
+        </div>
+
+        <!-- Feature Card 2 -->
+        <div class="glass-card p-8 hover:transform hover:-translate-y-2 transition-all duration-300">
+          <div class="text-4xl mb-4 text-purple-600">🔒</div>
+          <h3 class="text-2xl font-semibold mb-4">Secure & Private</h3>
+          <p class="text-gray-600">
+            Your health data remains completely confidential
+          </p>
+        </div>
+
+        <!-- Feature Card 3 -->
+        <div class="glass-card p-8 hover:transform hover:-translate-y-2 transition-all duration-300">
+          <div class="text-4xl mb-4 text-green-600">⚡</div>
+          <h3 class="text-2xl font-semibold mb-4">Instant Responses</h3>
+          <p class="text-gray-600">
+            24/7 access to AI-powered health information
+          </p>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <div class="glass-card p-8 mb-12">
+        <h2 class="text-3xl font-bold mb-6 text-gray-800">About Our Technology</h2>
+        <p class="text-lg text-gray-600 leading-relaxed">
+          We combine advanced language models with retrieval-augmented generation (RAG)
+          to provide accurate health insights. Our system processes medical literature
+          in real-time, ensuring up-to-date and context-aware responses to your queries.
+        </p>
+      </div>
+
+      <!-- How It Works -->
+      <div class="glass-card p-8">
+        <h2 class="text-3xl font-bold mb-6 text-gray-800">How We Protect You</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="flex items-start space-x-4">
+            <div class="text-2xl text-blue-500">1.</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Secure Data Processing</h3>
+              <p class="text-gray-600">
+                All interactions are encrypted and never stored
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start space-x-4">
+            <div class="text-2xl text-purple-500">2.</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Source Verification</h3>
+              <p class="text-gray-600">
+                Answers are cross-verified with medical literature
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-6">
+      <div class="container mx-auto px-4 text-center">
+        <p class="opacity-90">
+          © 2024 HealthQuery AI. Not a substitute for professional medical advice.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
